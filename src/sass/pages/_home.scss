@@ -1,0 +1,138 @@
+.section-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-primary-light, 0.75),
+      rgba($color-primary-dark, 0.75)
+    ),
+    url(../../../img/adventure-2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.section-about {
+  padding: 9.6rem 0;
+
+  @include respond(laptop-sm) {
+    padding: 9.6rem 0 44rem 0;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 9.6rem;
+
+    @include respond(laptop-sm) {
+      grid-template-columns: 1fr;
+      row-gap: 4.8rem;
+    }
+  }
+}
+
+.section-features {
+  background-image: linear-gradient(
+      to right,
+      rgba($color-primary-light, 0.8),
+      rgba($color-primary-dark, 0.8)
+    ),
+    url(../img/adventure-1.jpg);
+  transform: skewY(-7deg);
+  padding: 19.2rem 0;
+  background-size: cover;
+  background-position: center;
+  margin: 16rem 0;
+
+  @include respond(laptop-md) {
+    margin: 9.6rem 0;
+    transform: skewY(-5deg);
+  }
+
+  @include respond(tablet) {
+    margin: 4.8rem 0;
+    padding: 9.6rem 0;
+  }
+
+  & > * {
+    transform: skewY(7deg);
+
+    @include respond(laptop-md) {
+      transform: skewY(5deg);
+    }
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 4.8rem;
+
+    @include respond(laptop-md) {
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+      row-gap: 2.4rem;
+      padding: 0 3.2rem;
+    }
+  }
+}
+
+.section-tours {
+  padding: 4.8rem 3.2rem;
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 6.4rem;
+
+    @include respond(laptop-md) {
+      max-width: 88rem;
+      row-gap: 4.8rem;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include respond(tablet) {
+      grid-template-columns: 1fr;
+      justify-items: center;
+      row-gap: 32rem;
+      margin-bottom: 16.4rem;
+    }
+  }
+}
+
+.section-testimonials {
+  margin: 9.6rem 0 0 0;
+  padding: 12.8rem 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include respond(tablet) {
+    padding: 6.4rem 0;
+  }
+
+  .bg-video {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba($color-grey-light-1, 0.5);
+    opacity: 0.15;
+
+    &__content {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+.section-cta {
+  padding: 12.8rem 0;
+  background-image: linear-gradient(
+    to right,
+    $color-primary-light,
+    $color-primary-dark
+  );
+}

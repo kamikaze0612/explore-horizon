@@ -1,0 +1,91 @@
+.testimonial {
+  width: 60%;
+  padding: 6.4rem;
+  padding-left: 9.6rem;
+  transform: skewX(-12deg);
+  background-color: rgba($color: $color-white, $alpha: 0.65);
+
+  @include respond(laptop-md) {
+    width: 80%;
+  }
+
+  @include respond(tablet) {
+    width: 100%;
+    transform: skewX(0);
+  }
+
+  & > * {
+    transform: skewX(12deg);
+
+    @include respond(tablet) {
+      transform: skewX(0);
+    }
+  }
+
+  &__shape {
+    position: relative;
+    height: 16rem;
+    width: 16rem;
+    overflow: hidden;
+    border-radius: 50%;
+    float: left;
+    shape-outside: circle(50% at 50% 50%);
+    transform: translateX(-3rem) skewX(12deg);
+
+    @include respond(laptop-big) {
+      height: 20rem;
+      width: 20rem;
+    }
+
+    @include respond(tablet) {
+      transform: translateX(-3rem) skewX(0);
+    }
+  }
+
+  &__img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease;
+    transform: scale(1.1);
+  }
+
+  &:hover &__img {
+    filter: blur(3px) brightness(0.8);
+    transform: scale(1);
+  }
+
+  &__caption {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 5rem);
+    font-size: 2rem;
+    width: min-content;
+    line-height: 1.6;
+    color: $color-white;
+    font-weight: 600;
+    text-align: center;
+    transition: all 0.3s;
+
+    @include respond(laptop-big) {
+      font-size: 1.6rem;
+    }
+
+    @include respond(tablet) {
+      font-size: 1.4rem;
+    }
+  }
+
+  &:hover &__caption {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+
+  &__text {
+    font-size: 2rem;
+    line-height: 1.6;
+    color: $color-grey-dark;
+  }
+}

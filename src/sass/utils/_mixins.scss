@@ -1,0 +1,57 @@
+// Initial format for anchor elements
+@mixin format-anchors {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+// Initial format for buttons through entire page
+@mixin format-btn-links {
+  border-radius: 100px;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+@mixin respond($breakPoint) {
+  @if $breakPoint == phone {
+    @media only screen and (max-width: 27em) {
+      // narrower than 432 pixels
+      @content;
+    }
+  }
+
+  @if $breakPoint == tablet {
+    @media only screen and (max-width: 48em) {
+      // narrower than 768 pixels
+      @content;
+    }
+  }
+
+  @if $breakPoint == laptop-sm {
+    @media only screen and (max-width: 64em) {
+      // narrower than 1024 pixels
+      @content;
+    }
+  }
+
+  @if $breakPoint == laptop-md {
+    @media only screen and (max-width: 80em) {
+      // narrower than 1280 pixels
+      @content;
+    }
+  }
+
+  @if $breakPoint == laptop-big {
+    @media only screen and (max-width: 96em) {
+      // narrower than 1536 pixels
+      @content;
+    }
+  }
+
+  @if $breakPoint == desktop-big {
+    @media only screen and (min-width: 140em) {
+      // wider than 2240 pixels
+      @content;
+    }
+  }
+}

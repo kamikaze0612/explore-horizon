@@ -1,0 +1,9 @@
+.container {
+  max-width: 132rem;
+  margin: 0 auto;
+
+  @include respond(laptop-md) {
+    max-width: 120rem;
+    padding: 0 4.8rem;
+  }
+}

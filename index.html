@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Buyantogtokh Bekhbayar" />
+    <meta
+      name="description"
+      content="Explore Horizons is platform that can help you find the best adventures that can leave unforgettable memories."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" type="image/x-icon" href="./img/favicon.png" />
+
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <script defer src="./script.js"></script>
+
+    <title>Explore Horizons | Experience adventures</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <a class="header__link--logo" href="#">
+        <img
+          class="header__logo"
+          src="./img/logo-white.png"
+          alt="Logo of Explore horizons"
+        />
+        <h2 class="header__logo-text">Explore Horizons</h2>
+      </a>
+      <input
+        type="checkbox"
+        name="header__btn"
+        id="header__btn"
+        class="header__btn"
+      />
+      <label class="header__label" for="header__btn">
+        <span class="line"></span>
+      </label>
+      <nav class="header__nav">
+        <ul class="header__list">
+          <li class="header__list-item">
+            <a href="#about" class="header__link">About</a>
+          </li>
+          <li class="header__list-item">
+            <a href="#features" class="header__link">Features</a>
+          </li>
+          <li class="header__list-item">
+            <a href="#tours" class="header__link">Tours</a>
+          </li>
+          <li class="header__list-item">
+            <a href="#testimonials" class="header__link">Testimonials</a>
+          </li>
+          <li class="header__list-item">
+            <a href="#cta" class="header__link">Book now</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+      <section class="section-hero">
+        <h1 class="heading--primary">
+          <span class="heading--primary-main mg-bottom-lg">Exploration</span>
+          <span class="heading--primary-sub mg-bottom-2xl"
+            >is where life happens</span
+          >
+        </h1>
+        <a href="#tours" class="btn__link--white">See tours</a>
+      </section>
+
+      <section id="about" class="section-about">
+        <h2 class="heading--secondary mg-bottom-xl">
+          Exciting tours for adventurous people
+        </h2>
+        <div class="container">
+          <div class="about">
+            <article class="about__article">
+              <h3 class="heading--tertiary">
+                You're going to fall in love with nature
+              </h3>
+              <p class="about__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aperiam, ipsum sapiente aspernatur libero repellat quis
+                consequatur ducimus quam nisi exercitationem omnis earum qui.
+              </p>
+            </article>
+            <article class="about__article">
+              <h3 class="heading--tertiary">
+                Live adventures like you never have before
+              </h3>
+              <p class="about__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aperiam, ipsum sapiente nam.
+              </p>
+            </article>
+
+            <a href="#" class="btn__link">Learn more &rarr;</a>
+          </div>
+          <figure class="gallery">
+            <!-- <img src="" alt="Nature image 1" class="about__img about__img--1">
+            <img src="" alt="Nature image 2" class="about__img about__img--2">
+            <img src="" alt="Nature image 3" class="about__img about__img--3"> -->
+
+            <span class="about__img about__img--1">
+              <img src="./img/gallery-1.jpg" alt="Image of nature 1" />
+            </span>
+            <span class="about__img about__img--2">
+              <img src="./img/gallery-2.jpg" alt="Image of nature 2" />
+            </span>
+            <span class="about__img about__img--3">
+              <img src="./img/gallery-3.jpg" alt="Image of nature 3" />
+            </span>
+          </figure>
+        </div>
+      </section>
+
+      <section id="features" class="section-features">
+        <div class="container">
+          <div class="feature">
+            <svg class="feature__icon">
+              <use xlink:href="./img/sprite.svg#icon-world"></use>
+            </svg>
+            <h4 class="feature__heading">Explore the world</h4>
+            <p class="feature__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
+              quibusdam neque tempore atque quia rerum, ducimus porro voluptate
+              omnis saepe.
+            </p>
+          </div>
+          <div class="feature">
+            <svg class="feature__icon">
+              <use xlink:href="./img/sprite.svg#icon-compass2"></use>
+            </svg>
+            <h4 class="feature__heading">Meet nature</h4>
+            <p class="feature__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
+              quibusdam neque tempore atque quia rerum, ducimus porro voluptate
+              omnis saepe.
+            </p>
+          </div>
+          <div class="feature">
+            <svg class="feature__icon">
+              <use xlink:href="./img/sprite.svg#icon-map2"></use>
+            </svg>
+            <h4 class="feature__heading">Find your way</h4>
+            <p class="feature__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
+              quibusdam neque tempore atque quia rerum, ducimus porro voluptate
+              omnis saepe.
+            </p>
+          </div>
+          <div class="feature">
+            <svg class="feature__icon">
+              <use xlink:href="./img/sprite.svg#icon-heart"></use>
+            </svg>
+            <h4 class="feature__heading">Live healthier life</h4>
+            <p class="feature__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
+              quibusdam neque tempore atque quia rerum, ducimus porro voluptate
+              omnis saepe.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="tours" class="section-tours">
+        <h2 class="heading--secondary mg-bottom-huge">Most popular tours</h2>
+        <div class="container">
+          <!-- CARD #1 -->
+          <div class="card">
+            <div class="card__side card__side--front">
+              <div class="card__picture card__picture--1">&nbsp;</div>
+              <h2 class="card__heading card__heading--1">
+                <span class="card__heading-span card__heading-span--1"
+                  >The sea explorer</span
+                >
+              </h2>
+              <ul class="card__list">
+                <li class="card__list-item">
+                  <svg
+                    class="card__icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M208,32H184V24a8,8,0,0,0-16,0v8H88V24a8,8,0,0,0-16,0v8H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32ZM72,48v8a8,8,0,0,0,16,0V48h80v8a8,8,0,0,0,16,0V48h24V80H48V48ZM208,208H48V96H208V208Z"
+                    ></path>
+                  </svg>
+                  3 days tour
+                </li>
+                <li class="card__list-item">
+                  <svg
+                    class="card__icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M117.25,157.92a60,60,0,1,0-66.5,0A95.83,95.83,0,0,0,3.53,195.63a8,8,0,1,0,13.4,8.74,80,80,0,0,1,134.14,0,8,8,0,0,0,13.4-8.74A95.83,95.83,0,0,0,117.25,157.92ZM40,108a44,44,0,1,1,44,44A44.05,44.05,0,0,1,40,108Zm210.14,98.7a8,8,0,0,1-11.07-2.33A79.83,79.83,0,0,0,172,168a8,8,0,0,1,0-16,44,44,0,1,0-16.34-84.87,8,8,0,1,1-5.94-14.85,60,60,0,0,1,55.53,105.64,95.83,95.83,0,0,1,47.22,37.71A8,8,0,0,1,250.14,206.7Z"
+                    ></path>
+                  </svg>
+                  Up to 30 people
+                </li>
+                <li class="card__list-item">
+                  <svg
+                    class="card__icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M228.92,49.69a8,8,0,0,0-6.86-1.45L160.93,63.52,99.58,32.84a8,8,0,0,0-5.52-.6l-64,16A8,8,0,0,0,24,56V200a8,8,0,0,0,9.94,7.76l61.13-15.28,61.35,30.68A8.15,8.15,0,0,0,160,224a8,8,0,0,0,1.94-.24l64-16A8,8,0,0,0,232,200V56A8,8,0,0,0,228.92,49.69ZM104,52.94l48,24V203.06l-48-24ZM40,62.25l48-12v127.5l-48,12Zm176,131.5-48,12V78.25l48-12Z"
+                    ></path>
+                  </svg>
+                  2 tour guides
+                </li>
+                <li class="card__list-item">
+                  <svg
+                    class="card__icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M208,72H24V48A8,8,0,0,0,8,48V208a8,8,0,0,0,16,0V176H232v32a8,8,0,0,0,16,0V112A40,40,0,0,0,208,72ZM24,88H96v72H24Zm88,72V88h96a24,24,0,0,1,24,24v48Z"
+                    ></path>
+                  </svg>
+                  Sleep in cozy hotel
+                </li>
+                <li class="card__list-item">
+                  <svg
+                    class="card__icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M80,96a8,8,0,0,1-8,8H24a8,8,0,0,1,0-16H72A8,8,0,0,1,80,96Zm-8,24H24a8,8,0,0,0,0,16H72a8,8,0,0,0,0-16Zm0,32H24a8,8,0,0,0,0,16H72a8,8,0,0,0,0-16Zm0,32H24a8,8,0,0,0,0,16H72a8,8,0,0,0,0-16Zm80-64H104a8,8,0,0,0,0,16h48a8,8,0,0,0,0-16Zm0,32H104a8,8,0,0,0,0,16h48a8,8,0,0,0,0-16Zm0,32H104a8,8,0,0,0,0,16h48a8,8,0,0,0,0-16Zm80-96H184a8,8,0,0,0,0,16h48a8,8,0,0,0,0-16ZM184,72h48a8,8,0,0,0,0-16H184a8,8,0,0,0,0,16Zm48,48H184a8,8,0,0,0,0,16h48a8,8,0,0,0,0-16Zm0,32H184a8,8,0,0,0,0,16h48a8,8,0,0,0,0-16Zm0,32H184a8,8,0,0,0,0,16h48a8,8,0,0,0,0-16Z"
+                    ></path>
+                  </svg>
+                  Easy
+                </li>
+              </ul>
+            </div>
+            <div class="card__side card__side--back card__side--back--1">
+              <div class="card__info">
+                <span class="card__tag">Just</span>
+                <span class="card__price">297</span>
+                <a class="btn__link--white" href="#">Book now</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD #2 -->
+          <div class="card">
+            <div class="card__side card__side--front">
+              <div class="card__picture card__picture--2"></div>
+              <h2 class="card__heading card__heading--2">
+                <span class="card__heading-span card__heading-span--2"
+                  >The forest hiker</span
+                >
+              </h2>
+              <ul class="card__list">
+                <li class="card__list-item">
+                  <svg
+                    class="card__icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M208,32H184V24a8,8,0,0,0-16,0v8H88V24a8,8,0,0,0-16,0v8H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32ZM72,48v8a8,8,0,0,0,16,0V48h80v8a8,8,0,0,0,16,0V48h24V80H48V48ZM208,208H48V96H208V208Z"
+                    ></path>
+                  </svg>
+                  7 days tour
+                </li>
+                <li class="card__list-item">
+                  <svg
+                    class="card__icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M117.25,157.92a60,60,0,1,0-66.5,0A95.83,95.83,0,0,0,3.53,195.63a8,8,0,1,0,13.4,8.74,80,80,0,0,1,134.14,0,8,8,0,0,0,13.4-8.74A95.83,95.83,0,0,0,117.25,157.92ZM40,108a44,44,0,1,1,44,44A44.05,44.05,0,0,1,40,108Zm210.14,98.7a8,8,0,0,1-11.07-2.33A79.83,79.83,0,0,0,172,168a8,8,0,0,1,0-16,44,44,0,1,0-16.34-84.87,8,8,0,1,1-5.94-14.85,60,60,0,0,1,55.53,105.64,95.83,95.83,0,0,1,47.22,37.71A8,8,0,0,1,250.14,206.7Z"
+                    ></path>
+                  </svg>
+                  Up to 50 people
+                </li>
+                <li class="card__list-item">
+                  <svg
+                    class="card__icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M228.92,49.69a8,8,0,0,0-6.86-1.45L160.93,63.52,99.58,32.84a8,8,0,0,0-5.52-.6l-64,16A8,8,0,0,0,24,56V200a8,8,0,0,0,9.94,7.76l61.13-15.28,61.35,30.68A8.15,8.15,0,0,0,160,224a8,8,0,0,0,1.94-.24l64-16A8,8,0,0,0,232,200V56A8,8,0,0,0,228.92,49.69ZM104,52.94l48,24V203.06l-48-24ZM40,62.25l48-12v127.5l-48,12Zm176,131.5-48,12V78.25l48-12Z"
+                    ></path>
+                  </svg>
+                  7 tour guides
+                </li>
+                <li class="card__list-item">
+                  <svg
+                    class="card__icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M208,72H24V48A8,8,0,0,0,8,48V208a8,8,0,0,0,16,0V176H232v32a8,8,0,0,0,16,0V112A40,40,0,0,0,208,72ZM24,88H96v72H24Zm88,72V88h96a24,24,0,0,1,24,24v48Z"
+                    ></path>
+                  </svg>
+                  Sleep in provided tents
+                </li>
+                <li class="card__list-item">
+                  <svg
+                    class="card__icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M80,96a8,8,0,0,1-8,8H24a8,8,0,0,1,0-16H72A8,8,0,0,1,80,96Zm-8,24H24a8,8,0,0,0,0,16H72a8,8,0,0,0,0-16Zm0,32H24a8,8,0,0,0,0,16H72a8,8,0,0,0,0-16Zm0,32H24a8,8,0,0,0,0,16H72a8,8,0,0,0,0-16Zm80-64H104a8,8,0,0,0,0,16h48a8,8,0,0,0,0-16Zm0,32H104a8,8,0,0,0,0,16h48a8,8,0,0,0,0-16Zm0,32H104a8,8,0,0,0,0,16h48a8,8,0,0,0,0-16Zm80-96H184a8,8,0,0,0,0,16h48a8,8,0,0,0,0-16ZM184,72h48a8,8,0,0,0,0-16H184a8,8,0,0,0,0,16Zm48,48H184a8,8,0,0,0,0,16h48a8,8,0,0,0,0-16Zm0,32H184a8,8,0,0,0,0,16h48a8,8,0,0,0,0-16Zm0,32H184a8,8,0,0,0,0,16h48a8,8,0,0,0,0-16Z"
+                    ></path>
+                  </svg>
+                  Medium
+                </li>
+              </ul>
+            </div>
+            <div class="card__side card__side--back card__side--back--2">
+              <div class="card__info">
+                <span class="card__tag">Just</span>
+                <span class="card__price">597</span>
+                <a class="btn__link--white" href="#">Book now</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD #3 -->
+          <div class="card">
+            <div class="card__side card__side--front">
+              <div class="card__picture card__picture--3"></div>
+              <h2 class="card__heading card__heading--3">
+                <span class="card__heading-span card__heading-span--3">
+                  The Snow adventurer
+                </span>
+              </h2>
+              <ul class="card__list">
+                <li class="card__list-item">
+                  <svg
+                    class="card__icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M208,32H184V24a8,8,0,0,0-16,0v8H88V24a8,8,0,0,0-16,0v8H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32ZM72,48v8a8,8,0,0,0,16,0V48h80v8a8,8,0,0,0,16,0V48h24V80H48V48ZM208,208H48V96H208V208Z"
+                    ></path>
+                  </svg>
+                  5 days tour
+                </li>
+                <li class="card__list-item">
+                  <svg
+                    class="card__icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M117.25,157.92a60,60,0,1,0-66.5,0A95.83,95.83,0,0,0,3.53,195.63a8,8,0,1,0,13.4,8.74,80,80,0,0,1,134.14,0,8,8,0,0,0,13.4-8.74A95.83,95.83,0,0,0,117.25,157.92ZM40,108a44,44,0,1,1,44,44A44.05,44.05,0,0,1,40,108Zm210.14,98.7a8,8,0,0,1-11.07-2.33A79.83,79.83,0,0,0,172,168a8,8,0,0,1,0-16,44,44,0,1,0-16.34-84.87,8,8,0,1,1-5.94-14.85,60,60,0,0,1,55.53,105.64,95.83,95.83,0,0,1,47.22,37.71A8,8,0,0,1,250.14,206.7Z"
+                    ></path>
+                  </svg>
+                  Up to 15 people
+                </li>
+                <li class="card__list-item">
+                  <svg
+                    class="card__icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M228.92,49.69a8,8,0,0,0-6.86-1.45L160.93,63.52,99.58,32.84a8,8,0,0,0-5.52-.6l-64,16A8,8,0,0,0,24,56V200a8,8,0,0,0,9.94,7.76l61.13-15.28,61.35,30.68A8.15,8.15,0,0,0,160,224a8,8,0,0,0,1.94-.24l64-16A8,8,0,0,0,232,200V56A8,8,0,0,0,228.92,49.69ZM104,52.94l48,24V203.06l-48-24ZM40,62.25l48-12v127.5l-48,12Zm176,131.5-48,12V78.25l48-12Z"
+                    ></path>
+                  </svg>
+                  4 tour guides
+                </li>
+                <li class="card__list-item">
+                  <svg
+                    class="card__icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M208,72H24V48A8,8,0,0,0,8,48V208a8,8,0,0,0,16,0V176H232v32a8,8,0,0,0,16,0V112A40,40,0,0,0,208,72ZM24,88H96v72H24Zm88,72V88h96a24,24,0,0,1,24,24v48Z"
+                    ></path>
+                  </svg>
+                  Sleep in provided tents
+                </li>
+                <li class="card__list-item">
+                  <svg
+                    class="card__icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M80,96a8,8,0,0,1-8,8H24a8,8,0,0,1,0-16H72A8,8,0,0,1,80,96Zm-8,24H24a8,8,0,0,0,0,16H72a8,8,0,0,0,0-16Zm0,32H24a8,8,0,0,0,0,16H72a8,8,0,0,0,0-16Zm0,32H24a8,8,0,0,0,0,16H72a8,8,0,0,0,0-16Zm80-64H104a8,8,0,0,0,0,16h48a8,8,0,0,0,0-16Zm0,32H104a8,8,0,0,0,0,16h48a8,8,0,0,0,0-16Zm0,32H104a8,8,0,0,0,0,16h48a8,8,0,0,0,0-16Zm80-96H184a8,8,0,0,0,0,16h48a8,8,0,0,0,0-16ZM184,72h48a8,8,0,0,0,0-16H184a8,8,0,0,0,0,16Zm48,48H184a8,8,0,0,0,0,16h48a8,8,0,0,0,0-16Zm0,32H184a8,8,0,0,0,0,16h48a8,8,0,0,0,0-16Zm0,32H184a8,8,0,0,0,0,16h48a8,8,0,0,0,0-16Z"
+                    ></path>
+                  </svg>
+                  Hard
+                </li>
+              </ul>
+            </div>
+            <div class="card__side card__side--back card__side--back--3">
+              <div class="card__info">
+                <span class="card__tag">Just</span>
+                <span class="card__price">897</span>
+                <a class="btn__link--white" href="#">Book now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="testimonials" class="section-testimonials">
+        <div class="bg-video">
+          <video
+            src="./img/bg-video.mp4"
+            loop
+            autoplay
+            muted
+            class="bg-video__content"
+          ></video>
+        </div>
+        <h2 class="heading--secondary mg-bottom-2xl">
+          We make people genuinely happy
+        </h2>
+        <!-- TESTIMONIAL #1 -->
+        <div class="testimonial mg-bottom-2xl">
+          <figure class="testimonial__shape">
+            <img
+              class="testimonial__img"
+              src="./img/man.jpg"
+              alt="Image of Steven Lue"
+            />
+            <figcaption class="testimonial__caption">Steven Lue</figcaption>
+          </figure>
+          <article class="testimonial__article">
+            <h3 class="heading--tertiary mg-bottom-md">
+              I had the best week ever with my family
+            </h3>
+            <p class="testimonial__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam,
+              ipsum sapiente aspernatur libero repellat quis consequatur ducimus
+              quam nisi exercitationem omnis earum qui. Aperiam, ipsum sapiente
+              aspernatur libero repellat quis consequatur ducimus quam nisi
+              exercitationem omnis earum qui.
+            </p>
+          </article>
+        </div>
+        <!-- TESTIMONIAL #2 -->
+        <div class="testimonial mg-bottom-2xl">
+          <figure class="testimonial__shape">
+            <img
+              class="testimonial__img"
+              src="./img/rebecca.jpg"
+              alt="Image of Rebecca Wilson"
+            />
+            <figcaption class="testimonial__caption">Rebecca Wilson</figcaption>
+          </figure>
+          <article class="testimonial__article">
+            <h3 class="heading--tertiary mg-bottom-md">
+              Wow! my life is completely different now
+            </h3>
+            <p class="testimonial__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam,
+              ipsum sapiente aspernatur libero repellat quis consequatur ducimus
+              quam nisi exercitationem omnis earum qui. Aperiam, ipsum sapiente
+              aspernatur libero repellat quis consequatur ducimus quam nisi
+              exercitationem omnis earum qui.
+            </p>
+          </article>
+        </div>
+        <div style="z-index: 1">
+          <a href="#" class="btn__link">Read all stories &rarr;</a>
+        </div>
+      </section>
+
+      <section id="cta" class="section-cta">
+        <form action="post" class="cta__form">
+          <div class="cta__field">
+            <h2 class="heading--secondary">Start booking now</h2>
+            <div class="cta__row">
+              <input
+                class="cta__input"
+                required
+                type="text"
+                id="name"
+                placeholder="Full name"
+              />
+              <label class="cta__input-label" for="name">Full name</label>
+            </div>
+            <div class="cta__row">
+              <input
+                class="cta__input"
+                required
+                type="email"
+                id="email"
+                placeholder="Email address"
+              />
+              <label class="cta__input-label" for="email">Email address</label>
+            </div>
+            <div class="cta__row">
+              <div class="cta__radio">
+                <input type="radio" name="group" id="small-group" />
+                <label for="small-group" class="cta__radio-label"
+                  ><span class="cta__radio-btn"></span> Small tour group</label
+                >
+              </div>
+              <div class="cta__radio">
+                <input type="radio" name="group" id="large-group" />
+                <label for="large-group" class="cta__radio-label"
+                  ><span class="cta__radio-btn"></span> Large tour group</label
+                >
+              </div>
+            </div>
+            <div class="cta__row">
+              <a href="#" class="btn__link--green">Next step &rarr;</a>
+            </div>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__logo-box">
+          <span class="footer__logo-span">
+            <img
+              class="footer__logo"
+              src="./img/logo-color.png"
+              alt="Logo of Explore horizons"
+            />
+            <h2 class="footer__logo-text">Explore Horizons</h2>
+          </span>
+          <ul class="footer__links">
+            <li>
+              <a
+                class="footer__link"
+                target="_blank"
+                href="https://www.instagram.com/buyadai/"
+              >
+                <svg class="footer__icon">
+                  <use xlink:href="./img/sprite.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                class="footer__link"
+                target="_blank"
+                href="https://www.facebook.com/profile.php?id=100005116724021"
+              >
+                <svg class="footer__icon">
+                  <use xlink:href="./img/sprite.svg#icon-facebook2"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                class="footer__link"
+                target="_blank"
+                href="https://github.com/kamikaze0612"
+              >
+                <svg class="footer__icon">
+                  <use xlink:href="./img/sprite.svg#icon-github"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <ul class="footer__list">
+          <li class="footer__list-item">
+            <a class="footer__list-link" href="#">Account</a>
+          </li>
+          <li class="footer__list-item">
+            <a class="footer__list-link" href="#">Member Portal</a>
+          </li>
+          <li class="footer__list-item">
+            <a class="footer__list-link" href="#">Create Account</a>
+          </li>
+          <li class="footer__list-item">
+            <a class="footer__list-link" href="#">Referral Program</a>
+          </li>
+        </ul>
+        <ul class="footer__list">
+          <li class="footer__list-item">
+            <a class="footer__list-link" href="#">Company</a>
+          </li>
+          <li class="footer__list-item">
+            <a class="footer__list-link" href="#">About us</a>
+          </li>
+          <li class="footer__list-item">
+            <a class="footer__list-link" href="#">Travel partners</a>
+          </li>
+          <li class="footer__list-item">
+            <a class="footer__list-link" href="#">Careers</a>
+          </li>
+        </ul>
+        <ul class="footer__list">
+          <li class="footer__list-item">Contact</li>
+          <li class="footer__list-item">
+            <address>623 Harrison Street, San Francisco, CA 94107</address>
+          </li>
+          <li class="footer__list-item">415-201-6370 help@natours.com</li>
+        </ul>
+        <span class="footer__author"
+          ><p class="footer__author-text">
+            &copy; 2023 All rights reserved. Coded by Buyantogtokh B.
+          </p></span
+        >
+      </div>
+    </footer>
+  </body>
+</html>

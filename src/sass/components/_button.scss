@@ -1,0 +1,109 @@
+.btn__link {
+  &:link,
+  &:visited {
+    @include format-anchors;
+    align-self: flex-start;
+    padding-bottom: 6px;
+    font-size: 2rem;
+    color: $color-primary-light;
+    border-bottom: 2px solid currentColor;
+    transition: transform 0.3s ease;
+
+    @include respond(tablet) {
+      font-size: 1.6rem;
+      padding-bottom: 4px;
+    }
+  }
+
+  &:hover,
+  &:active {
+    transform: translateY(-4px);
+  }
+}
+
+.btn__link--white {
+  &:link,
+  &:visited {
+    @include format-anchors;
+    @include format-btn-links;
+    padding: 2rem 4rem;
+    color: $color-grey-dark;
+    background-color: $color-white;
+    transition: all 0.2s ease;
+    position: relative;
+    z-index: 30;
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.1);
+
+    @include respond(tablet) {
+      padding: 1.6rem 3.2rem;
+      font-size: 1.6rem;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    border-radius: 100px;
+    background-color: $color-white;
+    @include format-btn-links;
+    transition: all 0.2s ease;
+    z-index: -1;
+  }
+
+  &:hover,
+  &:active {
+    transform: translateY(-4px);
+    box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+  }
+
+  &:hover::before {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
+.btn__link--green {
+  &:link,
+  &:visited {
+    @include format-anchors;
+    @include format-btn-links;
+    padding: 2rem 4rem;
+    color: $color-white;
+    background-color: $color-primary;
+    transition: all 0.2s ease;
+    position: relative;
+    z-index: 30;
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.1);
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    border-radius: 100px;
+    background-color: $color-primary;
+    @include format-btn-links;
+    transition: all 0.2s ease;
+    z-index: -1;
+  }
+
+  &:hover,
+  &:active {
+    transform: translateY(-4px);
+    box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+  }
+
+  &:hover::before {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
